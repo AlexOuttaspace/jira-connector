@@ -26,6 +26,7 @@ var groups = require('./api/groups');
 var issue = require('./api/issue');
 var issueLink = require('./api/issueLink');
 var issueLinkType = require('./api/issueLinkType');
+var issuePicker = require('./api/issuePicker');
 var issueType = require('./api/issueType');
 var jql = require('./api/jql');
 var licenseRole = require('./api/licenseRole');
@@ -205,6 +206,7 @@ var JiraClient = module.exports = function (config) {
     this.issue = new issue(this);
     this.issueLink = new issueLink(this);
     this.issueLinkType = new issueLinkType(this);
+    this.issuePicker = new issuePicker(this);
     this.issueType = new issueType(this);
     this.jql = new jql(this);
     this.licenseRole = new licenseRole(this);
